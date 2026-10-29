@@ -1,0 +1,26 @@
+refdes,marking,package,function,confidence,evidence,notes
+ULN2003-A,"ULN2003 / 866350H",SOIC-16W,"7-channel Darlington sink array (motor driver)",read,high-res.jpg,
+ULN2003-B,"ULN2003 / 866350H",SOIC-16W,"7-channel Darlington sink array (motor driver)",read,high-res.jpg,
+-1,"KH25V8035 / 5Q224300 / L261016",SOP-8,"8 Mbit SPI NOR flash (MX25V8035 clone) - flash #1",likely,"high-res.jpg, pcb_flash_and_jl","'U2' label sits near this part but the mapping is not proven"
+-2,"KH25V8035 / 5Q224300 / L261016",SOP-8,"8 Mbit SPI NOR flash (MX25V8035 clone) - flash #2",likely,"high-res.jpg, pcb_power_left",second identical part in the power section
+-,"JL logo + AB25BP33704-55A0",SOP-24,"JieLi BT/voice SoC (external-flash family)",guess,"high-res.jpg, pcb_flash_and_jl, owner","24-pin confirmed; pinout and download mode unverified - see docs/firmware.md"
+U5,blank / abraded,QFN-48?,"main / motion controller",guess,"high-res.jpg, pcb_qfn_u5",marking appears deliberately removed
+U3,"4056A / 5JD41C",SOP-8,"TP4056A-class 1-cell Li-ion linear charger",likely,"high-res.jpg, pcb_power_left",charge current set by R2
+U10,"KC?AH",SOT-23-6,"DC-DC converter (motor / 3V3 rail)",guess,"high-res.jpg, pcb_power_right",next to FB1 4R7 and 220uF/16V
+Q6,"?05W / 6B?6?",SOP-8,"dual MOSFET (load switch / half-bridge)",guess,"high-res.jpg, pcb_right_chips",marking illegible
+Q51,1AM,SOT-23,"small-signal NPN (MMBT3904 class)",likely,"high-res.jpg, pcb_right_chips",LED or speaker enable
+D7,SA,SOD-323,small diode,guess,high-res.jpg,
+D8,SA,SOD-323,small diode,guess,high-res.jpg,
+FB1,4R7,power inductor 4.7uH,"DC-DC inductor",read,"high-res.jpg, pcb_power_right",
+C19,220 16V VT,radial SMD electrolytic,"DC-DC output capacitor",read,"high-res.jpg, pcb_power_right",
+J14,,JST-XH 2-pos,"battery header (silk: 电池)",read,20261028_195308.jpg,thick red/black wires
+J?,,JST-XH 2-pos,"unlabelled auxiliary header (sensor/limit/switch)",read,20261028_195308.jpg,function unknown
+J?,,"JST-XH 4-pos","motor 3 header (silk: 电机3)",read,20261028_195308.jpg,4 wires
+J?,,"JST-XH 4-pos","motor 2 header (silk: 电机2)",read,20261028_195308.jpg,4 wires
+J?,,"JST-XH 4-pos","motor 1 header (silk: 电机1)",read,20261028_195308.jpg,4 wires
+J2?,JST-XH 2-pos,"JST-XH 2-pos","speaker header (silk: 喇叭)",read,20261028_195308.jpg,
+J16,,FPC 0.5mm pitch,"ribbon to head assembly",read,20261028_195243.jpg,contact count to confirm
+J15,,through-hole pads,"debug/programming pads V+ / U_1 / U_2 / NC",likely,"high-res.jpg, pcb_qfn_u5",plus TP and TP1
+SW1-3,,tactile 4-pin,user buttons x3,read,"high-res.jpg, pcb_buttons_left/right",near LED3/LED4 and R36/R37
+LED1-4,,LED,status LEDs x4,likely,20261028_195243.jpg,eyes probably driven over FPC instead
+J?,USB Type-C,USB-C receptacle,5V charging input,read,20261028_195243.jpg,data lines unknown
